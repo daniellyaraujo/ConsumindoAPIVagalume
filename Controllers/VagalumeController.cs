@@ -22,7 +22,7 @@ namespace APIVagalume.Controllers
         }
 
         [HttpGet("{insertArt}/{insertMus}")]
-        public ActionResult GetMusicByValue(string insertArt, string insertMus)
+        public ActionResult GetMusicByValue(string insertArt,string insertMus)
         {
             string url = $"{_host}art={insertArt}&mus={insertMus}&apiKey=key";
             var result = _client.GetAsync(url).Result;
