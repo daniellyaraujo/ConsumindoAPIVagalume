@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIVagalume", "APIVagalume.csproj", "{A2ADC5D9-8540-4FF5-B83D-9673C156DBCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2ADC5D9-8540-4FF5-B83D-9673C156DBCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2ADC5D9-8540-4FF5-B83D-9673C156DBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2ADC5D9-8540-4FF5-B83D-9673C156DBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2ADC5D9-8540-4FF5-B83D-9673C156DBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EF0AFE3-3875-40E5-BAA2-5F2244932720}
+	EndGlobalSection
+EndGlobal
