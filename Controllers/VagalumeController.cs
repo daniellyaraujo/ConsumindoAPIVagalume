@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using APIVagalumeService;
+using Microsoft.AspNetCore.Mvc;
 
 namespace APIVagalume.Controllers
 {
@@ -13,8 +14,16 @@ namespace APIVagalume.Controllers
         [HttpGet("{insertArt}/{insertMus}")]
         public ActionResult GetMusicByValue(string insertArt,string insertMus)
         {
-            var mus3 = new VagamuleService();
-            var results = mus3.GetMusic(insertArt, insertMus);
+            var mus3 = new VagalumeSvc("https://api.vagalume.com.br/search.php?");
+            var results = mus3.GetMusicas(insertArt, insertMus);
+            return new OkObjectResult(results);
+        }
+
+        [HttpGet("{insertArt}")]
+        public ActionResult GetArtRel(string insertArt)
+        {
+            var artnew = new VagalumeSvc("https://api.vagalume.com.br/search.php?");
+            var results = artnew.ObterArtRel(insertArt);
             return new OkObjectResult(results);
         }
     }
